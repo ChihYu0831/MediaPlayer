@@ -46,6 +46,7 @@
             // 
             // palButton
             // 
+            this.palButton.BackColor = System.Drawing.SystemColors.ControlDark;
             this.palButton.Controls.Add(this.grpAdjustSpeed);
             this.palButton.Controls.Add(this.btnStop);
             this.palButton.Controls.Add(this.btnPause);
@@ -59,49 +60,57 @@
             // 
             // btnStop
             // 
+            this.btnStop.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnStop.Enabled = false;
             this.btnStop.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnStop.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnStop.Location = new System.Drawing.Point(395, 19);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(75, 42);
             this.btnStop.TabIndex = 5;
             this.btnStop.Text = "停止";
-            this.btnStop.UseVisualStyleBackColor = true;
+            this.btnStop.UseVisualStyleBackColor = false;
             this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // btnPause
             // 
+            this.btnPause.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnPause.Enabled = false;
             this.btnPause.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPause.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnPause.Location = new System.Drawing.Point(275, 19);
             this.btnPause.Name = "btnPause";
             this.btnPause.Size = new System.Drawing.Size(75, 42);
             this.btnPause.TabIndex = 4;
             this.btnPause.Text = "暫停";
-            this.btnPause.UseVisualStyleBackColor = true;
+            this.btnPause.UseVisualStyleBackColor = false;
             this.btnPause.Click += new System.EventHandler(this.btnPause_Click);
             // 
             // btnPlay
             // 
+            this.btnPlay.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnPlay.Enabled = false;
             this.btnPlay.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPlay.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnPlay.Location = new System.Drawing.Point(155, 19);
             this.btnPlay.Name = "btnPlay";
             this.btnPlay.Size = new System.Drawing.Size(75, 42);
             this.btnPlay.TabIndex = 3;
             this.btnPlay.Text = "播放";
-            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.UseVisualStyleBackColor = false;
             this.btnPlay.Click += new System.EventHandler(this.btnPlay_Click);
             // 
             // btnBrowser
             // 
+            this.btnBrowser.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnBrowser.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBrowser.ForeColor = System.Drawing.SystemColors.Highlight;
             this.btnBrowser.Location = new System.Drawing.Point(35, 19);
             this.btnBrowser.Name = "btnBrowser";
             this.btnBrowser.Size = new System.Drawing.Size(75, 42);
             this.btnBrowser.TabIndex = 2;
             this.btnBrowser.Text = "瀏覽";
-            this.btnBrowser.UseVisualStyleBackColor = true;
+            this.btnBrowser.UseVisualStyleBackColor = false;
             this.btnBrowser.Click += new System.EventHandler(this.btnBrowser_Click);
             // 
             // wmpVideo
@@ -117,30 +126,35 @@
             // 
             // btnFastForward
             // 
+            this.btnFastForward.BackColor = System.Drawing.Color.Salmon;
             this.btnFastForward.Enabled = false;
             this.btnFastForward.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnFastForward.ForeColor = System.Drawing.Color.Maroon;
             this.btnFastForward.Location = new System.Drawing.Point(428, 30);
             this.btnFastForward.Name = "btnFastForward";
             this.btnFastForward.Size = new System.Drawing.Size(92, 42);
             this.btnFastForward.TabIndex = 6;
             this.btnFastForward.Text = "快轉 (2x)";
-            this.btnFastForward.UseVisualStyleBackColor = true;
+            this.btnFastForward.UseVisualStyleBackColor = false;
             this.btnFastForward.Click += new System.EventHandler(this.btnFastForward_Click);
             // 
             // btnSlowMotion
             // 
+            this.btnSlowMotion.BackColor = System.Drawing.SystemColors.Info;
             this.btnSlowMotion.Enabled = false;
             this.btnSlowMotion.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnSlowMotion.ForeColor = System.Drawing.Color.Gold;
             this.btnSlowMotion.Location = new System.Drawing.Point(41, 30);
             this.btnSlowMotion.Name = "btnSlowMotion";
             this.btnSlowMotion.Size = new System.Drawing.Size(117, 42);
             this.btnSlowMotion.TabIndex = 7;
             this.btnSlowMotion.Text = "慢動作 (0.5x)";
-            this.btnSlowMotion.UseVisualStyleBackColor = true;
+            this.btnSlowMotion.UseVisualStyleBackColor = false;
             this.btnSlowMotion.Click += new System.EventHandler(this.btnSlowMotion_Click);
             // 
             // grpAdjustSpeed
             // 
+            this.grpAdjustSpeed.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.grpAdjustSpeed.Controls.Add(this.btnNormalSpeed);
             this.grpAdjustSpeed.Controls.Add(this.btnSlowMotion);
             this.grpAdjustSpeed.Controls.Add(this.btnFastForward);
@@ -154,14 +168,16 @@
             // 
             // btnNormalSpeed
             // 
+            this.btnNormalSpeed.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.btnNormalSpeed.Enabled = false;
             this.btnNormalSpeed.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnNormalSpeed.ForeColor = System.Drawing.Color.ForestGreen;
             this.btnNormalSpeed.Location = new System.Drawing.Point(232, 30);
             this.btnNormalSpeed.Name = "btnNormalSpeed";
             this.btnNormalSpeed.Size = new System.Drawing.Size(122, 42);
             this.btnNormalSpeed.TabIndex = 8;
             this.btnNormalSpeed.Text = "正常速度 (1x)";
-            this.btnNormalSpeed.UseVisualStyleBackColor = true;
+            this.btnNormalSpeed.UseVisualStyleBackColor = false;
             this.btnNormalSpeed.Click += new System.EventHandler(this.btnNormalSpeed_Click);
             // 
             // frmMediaPlayer

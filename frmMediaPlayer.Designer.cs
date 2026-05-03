@@ -113,6 +113,7 @@
             this.wmpVideo.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("wmpVideo.OcxState")));
             this.wmpVideo.Size = new System.Drawing.Size(644, 451);
             this.wmpVideo.TabIndex = 0;
+            this.wmpVideo.PlayStateChange += new AxWMPLib._WMPOCXEvents_PlayStateChangeEventHandler(this.wmpVideo_PlayStateChange);
             // 
             // btnFastForward
             // 

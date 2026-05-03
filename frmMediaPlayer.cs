@@ -15,6 +15,28 @@ namespace MediaPlayer
         // 1. 新增一個變數，用來記錄使用者選擇的速度
         private double _selectedSpeed = 1.0;
 
+        private void ResetToLoadedState()
+        {
+            // 停止影片並回到開頭
+            wmpVideo.Ctlcontrols.stop();
+            wmpVideo.Ctlcontrols.currentPosition = 0;
+
+            // 播放結束後，讓使用者重新選速度
+            btnFastForward.Enabled = true;
+            btnNormalSpeed.Enabled = true;
+            btnSlowMotion.Enabled = true;
+
+            // 還沒重新選速度，所以播放鍵關閉
+            btnPlay.Enabled = false;
+
+            // 沒有正在播放，所以暫停、停止關閉
+            btnPause.Enabled = false;
+            btnStop.Enabled = false;
+
+            // 避免按鈕出現藍框
+            this.ActiveControl = null;
+        }
+
         public frmMediaPlayer()
         {
             InitializeComponent();
@@ -104,19 +126,16 @@ namespace MediaPlayer
 
         private void btnStop_Click(object sender, EventArgs e)
         {
-            wmpVideo.Ctlcontrols.stop();
+            ResetToLoadedState();
+        }
 
-            // 停止後，讓使用者重新選擇速度
-            btnFastForward.Enabled = true;
-            btnNormalSpeed.Enabled = true;
-            btnSlowMotion.Enabled = true;
-
-            // 重新選速度前，播放鍵先關掉
-            btnPlay.Enabled = false;
-
-            // 停止後不能暫停、停止
-            btnPause.Enabled = false;
-            btnStop.Enabled = false;
+        private void wmpVideo_PlayStateChange(object sender, AxWMPLib._WMPOCXEvents_PlayStateChangeEvent e)
+        {
+            // 8 代表 MediaEnded，也就是影片播放結束
+            if (e.newState == 8)
+            {
+                ResetToLoadedState();
+            }
         }
     }
 }

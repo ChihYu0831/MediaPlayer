@@ -78,3 +78,11 @@
 7. 影片播放結束後，播放器會自動回到可重新選擇速度的狀態。
 
 ---
+
+<img width="813" height="611" alt="image" src="https://github.com/user-attachments/assets/f0b09abc-c39e-4931-8662-ce6fa83e18b2" />
+
+<img width="815" height="608" alt="image" src="https://github.com/user-attachments/assets/fcf1f9ae-10d4-4401-9148-89497dd102c7" />
+
+<img width="820" height="611" alt="image" src="https://github.com/user-attachments/assets/cda07c17-ecf1-4dac-8c67-d96cde25e099" />
+
+
